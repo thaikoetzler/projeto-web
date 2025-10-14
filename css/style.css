@@ -1,0 +1,178 @@
+/* 
+****** LIMPAR FORMATAÇÕES ******
+*/
+*{
+    margin: 0;
+    padding: 0;
+}
+
+/* 
+****** PLANO DE FUNDO E FONTE ******
+*/
+body{
+    background-image:url("../imagens/bgimagem.jpg");
+    font-family: monospace;
+    font-size: 16px;
+}
+
+/* 
+****** TÍTULO PRINCIPAL ******
+*/
+#titulo{
+    display: block;
+    background-color: #FFFFFF;
+    text-align: center;
+    margin: 25px;
+    padding: 10px;
+    border-radius: 15px;
+    border-style: double;
+    border-color: #8EA8F3
+}
+
+/* 
+****** ESTILIZAÇÃO DO MENU DE NAVEGAÇÃO ******
+*/
+ul {
+    list-style-type: none;
+    margin: 25px;
+    padding: 10px;
+    border-radius: 15px;
+    background-color: #FFFFFF;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+li a {
+  display: block;
+  color: #000;
+  padding: 8px 16px;
+  text-decoration: none;
+}
+
+.menu a:hover{
+    color: #FFFFFF;
+    background: #8EA8F3;
+    text-decoration: none;
+}
+
+/* 
+****** ESTILIZAÇÃO DAS SESSÕES DAS PÁGINAS ******
+*/
+section{
+    position: relative;
+    display: block;
+    margin: 25px;
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.6);
+    border-style: dotted;
+    border-color: #8EA8F3;
+}
+
+#hobbies, #cursos{
+    text-align: right;
+}
+
+/* 
+****** ESTILIZAÇÃO DOS ÍCONES DAS REDES SOCIAIS DO INDEX E DO PORTFÓLIO ******
+*/
+.redes-sociais {
+    text-align: left;
+    padding: 20px 0;
+    position: relative;
+}
+
+.redes-sociais a {
+    margin: 0 20px;
+    display: inline-block;
+}
+
+.redes-sociais a img {
+    width: 40px;
+    height: 40px;
+    transition: transform 0.3s ease;
+}
+
+.redes-sociais a:hover img {
+    transform: scale(1.15);
+}
+
+#github-icon{
+    width: 75px;
+    height: 75px;
+    margin-left: 120px;
+}
+
+/* 
+****** ESTILIZAÇÃO DOS GIFS ******
+*/
+#icone-totoro, #icone-bmo, #icone-jiji, #icone-pc{
+    position: absolute;
+    bottom: 15px;
+    right: 45px;
+}
+
+.gif-container img {
+    max-width: 100%;
+    height: auto;
+}
+
+/* 
+****** ESTILIZAÇÃO DA PÁGINA DE CONTATO ******
+*/
+.formulario input, .formulario textarea {
+    width: 50%;
+    padding: 8px;
+    margin-bottom: 15px;
+}
+
+/* 
+****** ESTILIZAÇÃO DE BOTÃO DE ENVIO DO FORMULÁRIO ******
+*/
+button{
+    font-family: monospace;
+    color: #333;
+    font-size: 16px;
+    padding: 12px 20px;
+    background-color: #f0f0f0;
+    border: 2px solid #8EA8F3;
+    box-shadow: 4px 4px 0px #888;
+}
+
+button:hover{
+    background-color: #d5d5d5;
+}
+
+button:active{
+    transform: translate(4px, 4px);
+    box-shadow: none;
+}
+
+/* 
+****** RODAPÉ ******
+*/
+footer{
+    margin-left: 35px;
+    font-size: 12px;
+}
+
+/* 
+****** ESTILIZAÇÃO PARA DISPOSITIVOS MÓVEIS ******
+*/
+@media (max-width: 768px) {
+    .contato-container {
+        flex-direction: column; 
+    }
+
+    #icone-totoro, #icone-bmo, #icone-jiji, #icone-pc{
+        position: static; 
+        display: block; 
+        margin: 25px auto 0;
+        transform: none; 
+    }
+
+    .formulario input, .formulario textarea {
+        width: 90%;
+    }
+}
